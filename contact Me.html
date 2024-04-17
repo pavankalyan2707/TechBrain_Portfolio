@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+      h3{
+        font-family: serif;
+      }
+     /* .nav{
+        background-color:darkseagreen;
+        color: black;
+        font-family:  Garamond;
+       } */
+       .nav{
+        background-color:whitesmoke;
+        color: black;
+        font-family:  Garamond;
+        position: fixed; /* Fixing the navbar position */
+        width: 100%; /* Make the navbar span the entire width */
+        z-index: 1000; /* Ensure it appears above other content */
+      }
+      .btn{
+        float: right;
+      }
+  input{
+      width: 200px;
+    } 
+    .social{
+        text-align: center;
+        font-size: 30px;
+    }
+  </style>
+  <script>
+    function validateForm() {
+        var uname = document.getElementById("Uname").value;
+        var phone = document.getElementById("phone").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var confirmpassword = document.getElementById("confirmpassword").value;
+        var valid = true;
+    
+        // Validate UserName
+        if (uname === "") {
+            document.getElementById("unameError").innerText = "Please enter a username";
+            valid = false;
+        } else {
+            document.getElementById("unameError").innerText = "";
+        }
+    
+        // Validate PhoneNumber
+        if (phone === "") {
+            document.getElementById("phoneError").innerText = "Please enter a phone number";
+            valid = false;
+        } else {
+            document.getElementById("phoneError").innerText = "";
+        }
+    
+        // Validate Email
+        if (email === "") {
+            document.getElementById("emailError").innerText = "Please enter an email address";
+            valid = false;
+        } else {
+            document.getElementById("emailError").innerText = "";
+        }
+    
+        // Validate Password
+        if (password === "") {
+            document.getElementById("passwordError").innerText = "Please enter a password";
+            valid = false;
+        } else {
+            document.getElementById("passwordError").innerText = "";
+        }
+    
+        // Validate Confirm Password
+        if (confirmpassword === "") {
+            document.getElementById("confirmpasswordError").innerText = "Please confirm your password";
+            valid = false;
+        } else if (password !== confirmpassword) {
+            document.getElementById("confirmpasswordError").innerText = "Passwords do not match";
+            valid = false;
+        } else {
+            document.getElementById("confirmpasswordError").innerText = "";
+        }
+    
+        return valid;
+    }
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="col-md-12 ">
+          <nav class="navbar navbar-expand-lg nav">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Portfolio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="About_Me.html">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="skills.html">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contact Me.html">Contact Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active"href="G.Venkata Pavan Kalyan.pdf">Resume</a>
+                  </li>
+                 
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+    <div class="container-fluid " style="background-color: thistle; text-align: justify; margin-top: 56px;">
+      <div class="row ">
+          <div class="col-md-6">
+   
+              <h3 style="text-align: center;">This is Pavan</h3>
+                 <address>
+                  <P style="text-align: center;">Phone No:7993637003<br>
+                    Adress: B.V Nagar Nellore <br>
+                    Gmail:gvpavankalyan27@gmail.com
+                    </P>
+                    <div class="social">
+                      <a href="https://www.facebook.com/profile.php?id=100010537563419&mibextid=ZbWKwL" style="color: white;"><i class='bx bxl-facebook'></i></a>
+                      <a href="https://www.linkedin.com/in/g-venkata-pavan-kalyan" style="color: white;"><i class='bx bxl-linkedin-square'></i></a>
+                      <a href="https://www.snapchat.com/add/pavankalya_n27?share_id=BQY9fndfOn0&locale=en-IN" style="color: white;"><i class='bx bxl-snapchat'></i></a>
+                      <a href="https://www.instagram.com/pavan.kalya_n?igsh=MTIzNGhvdTI5bjV4bw==" style="color: white;"><i class='bx bxl-instagram-alt' ></i></a>
+                  </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3864.1635796584005!2d79.932785!3d14.417732!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4cf3db30fd615b%3A0x2389d4041489b6cf!2sTechbrains%20Innovative%20Solutions%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1713248038180!5m2!1sen!2sin"width="485" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   </address> 
+                   
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-4 contact">
+              <form onsubmit="return validateForm()">
+                <h3 style="text-align: center;">Contact Me</h3>
+                <p style="text-align: center;">Fill the above details for contacting me</p>
+                  <label for="Uname">UserName</label>
+                  <input type="text" id="Uname"  pattern="[a-zA-Z0-9]+" name="uname" class="form-control" required="required">
+                  <span id="unameError" style="color: red;"></span>
+                  <br>
+                  <label for="phone">PhoneNumber</label>
+                  <input type="tel" id="phone" pattern="[0-9]{10}" name="phone" class="form-control" required="required">
+                  <span id="phoneError" style="color: red;"></span>
+                  <br>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" class="form-control" required="required">
+                  <span id="emailError" style="color: red;"></span>
+                  <br>
+                  <label for="password">Password</label>
+                  <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" class="form-control" required="required">
+                  <span id="passwordError" style="color: red;"></span>
+                  <br>
+                  <label for="confirmpassword">Confirm Password</label>
+                  <input type="password" id="confirmpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="confirmpassword" class="form-control" required="required">
+                  <span id="confirmpasswordError" style="color: red;"></span>
+                  <br>
+                  <input type="submit" class="btn btn-primary">
+              </form>
+          </div>
+          <div class="col-md-1"></div>
+      </div>
+     </div>
+</body>
+</html>
